@@ -72,7 +72,6 @@ public class Calculator {
             BigDecimal result = getResult();
             undoHistoryStackThreadLocal.get().push(result);
             resultThreadLocal.set(result.subtract(num));
-            ;
             redoHistoryStackThreadLocal.get().clear();
         }
     }
